@@ -1,5 +1,5 @@
-# concentration
-memory card game
+# Concentration
+Memory card game
 
 Win condition: You successfully match all of the cards present
 Lose condition: No lose condition
