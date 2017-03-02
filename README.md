@@ -1,13 +1,13 @@
 # Concentration
 Memory card game
+</br>
+Win condition: You successfully match all of the cards present</br>
+Lose condition: No lose condition</br>
 
-Win condition: You successfully match all of the cards present
-Lose condition: No lose condition
-
-Features: 
+Features: </br>
 •	Timer</br>
 
-States:
+States:</br>
 •	Opening screen saying “Concentration” with Start button</br>
 •	Game screen</br>
 •	You won! With text displaying your time</br>
