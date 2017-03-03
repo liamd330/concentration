@@ -2,7 +2,7 @@
 <html lang="en"> 
 <head> 
 	<meta charset="UTF-8" />
-	<title>Phaser - Making your first game, part 2</title>
+	<title>Concentration</title>
     <script src="//cdn.jsdelivr.net/phaser/2.2.2/phaser.min.js"></script>
     <style type="text/css">
         body {
@@ -15,19 +15,30 @@
 <script type="text/javascript">
 
 var game = new Phaser.Game(800, 600, Phaser.AUTO, '', { preload: preload, create: create, update: update });
+var card1;
+var card2;
 
 function preload() {
 
     game.load.image('back-of-card', 'assets/back-of-card.png');
+    game.load.image('background', 'assets/background.png');
+    game.load.image('zener', 'assets/zener.png');
 
 
 }
 
 function create() {
-    game.add.image(0, 0, 'back-of-card');
-    game.add.image(105, 0, 'back-of-card')
+	game.add.image(0, 0, 'background');
+    var card1 = game.add.image(5, 5, 'back-of-card');
+    var card2 = game.add.image(110, 5, 'back-of-card')
+    card1.inputEnabled = true;
+    card1.events.onInputDown.add(flip, this);
 }
 
+function flip() {
+game.add.image(5, 5, 'zener');
+
+}
 function update() {
 }
 
