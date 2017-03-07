@@ -22,7 +22,12 @@ function preload() {
 
     game.load.image('back-of-card', 'assets/back-of-card.png');
     game.load.image('background', 'assets/background.png');
-    game.load.image('zener', 'assets/zener.png');
+
+    game.load.image('green star', 'assets/green star.png');
+    game.load.image('blue waves', 'assets/blue waves.png');
+    game.load.image('yellow circle', 'assets/yellow circle.png');
+    game.load.image('red cross', 'assets/red cross.png');
+    game.load.image('black square', 'assets/black square.png');
 
 
 }
@@ -36,7 +41,7 @@ function create() {
 }
 
 function flip() {
-game.add.image(5, 5, 'zener');
+game.add.image(5, 5, 'red cross');
 
 }
 function update() {
