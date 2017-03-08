@@ -36,6 +36,15 @@ function create() {
 	game.add.image(0, 0, 'background');
     var card1 = game.add.image(5, 5, 'back-of-card');
     var card2 = game.add.image(110, 5, 'back-of-card')
+
+    /* Trying for loop
+
+    for (i = 0; i < 800; i + 60) {
+    	game.add.image(i, 5, 'back-of-card');
+    }
+
+    */
+
     card1.inputEnabled = true;
     card1.events.onInputDown.add(flip, this);
 }
